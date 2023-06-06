@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type='text/css' rel='stylesheet' href='../page_templetes/page.css'>
+        <link type="text/css" rel="stylesheet" href="support.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <title>Support</title>
+    
+    </head>
+    <body>
+        <!----------header---------->
+        <header w3-include-html="../page_templetes/header.html"></header>
+        <style> #support{ color: black; &::after{ background-color: black; max-width: 100%; } } </style>
+
+        <!-----------main----------->
+        <main>
+            <p class="void"></p>
+            <h1>Support</h1>
+            <section class="enter_area">
+                <div class="int-area">
+                    <p>이름</p>
+                    <div class="short_input"><input type="name" name="name" id="name"></input></div>
+                </div>
+                <div class="int-area">
+                    <p>전화번호 (선택)</p>
+                    <div class="short_input"><input type="tel" name="contacts" id="contacts"></input></div>
+                </div>
+            </section>
+            <section class="enter_area">
+                <div class="int-area">
+                    <p>문의 제목</p>
+                    <div class="mid_input"><input type="text" id="inq_title"></input></div>
+                </div>
+            </section>
+            <section class="enter_area">
+                <div class="int-area">
+                    <p>문의 내용</p>
+                    <div class="long_input"><textarea spellcheck="false" id="inq_context"></textarea></div>
+                </div>
+            </section>
+            <button id="submit" onclick="goMail()">제출</button>
+            <p class="void" style="height: 250px;"></p>
+        </main>
+
+        <!------------footer------------>
+        <footer w3-include-html="../page_templetes/footer.html"></footer>
+
+        <!------------script------------>
+        <script src='../page_templetes/page.js'></script>
+        <script src="support.js"></script>
+    </body>
+</html>

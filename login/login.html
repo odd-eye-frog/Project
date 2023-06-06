@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type='text/css' rel='stylesheet' href='../page_templetes/page.css'>
+    <link type="text/css" rel="stylesheet" href="login.css">
+    <title>Join Us</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!--스크립트 코드는 맨 밑에 스크립트 코드 애니메이션 작동가능하게 하는 기능임. 없으면 jquery 애니메이션 작동 안함.-->
+
+</head>
+<body>
+    <!----------header---------->
+    <header w3-include-html="../page_templetes/header.html"></header>
+
+    <!-----------main----------->
+    <div class="section">
+    <section class="login-form">
+        <h1>Moodi.</h1>
+        <form action=""> <!--로그인 기능작동하려면 여기 채워야 함.-->
+            <div class="int-area">
+                <input type="text" name="id" id="id" autocomplete="off" required>
+                    <label for="id">user name</label>
+                </input>
+            </div>
+            <div class="int-area">
+                <input type="password" name="pw" id="pw" autocomplete="off" required>
+                    <label for="pw">password</label>
+                </input>
+            </div>
+            <div class="btn-area">
+                <button id="btn" type="button">Log in</button>
+            </div>
+        </form>
+    </section>
+    </div>
+
+    <!------------footer------------>
+    <footer w3-include-html="../page_templetes/footer.html"></footer>
+
+    <!------------script------------>
+    <script src='../page_templetes/page.js'></script>
+    <script src="login.js"></script>
+</body>
+</html>

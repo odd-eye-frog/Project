@@ -1,0 +1,21 @@
+.section{
+    font-family: Pretendard;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FFF;
+}
+
+ul{list-style: none;}
+
+.map_image{
+    position: relative;
+}
+
+.map_text{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 530px;
+}
+
