@@ -1,0 +1,123 @@
+<!DOCTYpE html>
+<html lang='ko'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link type='text/css' rel='stylesheet' href='../page_templetes/page.css'>
+    <link type='text/css' rel='stylesheet' href='mood.css'>
+    <title>Mood</title>
+</head>
+<body>
+    <!----------header---------->  
+    <header w3-include-html='../page_templetes/header.html'></header>
+    <style> #mood{ color: black; &::after{ background-color: black; max-width: 100%; } } </style>
+
+    <!-------main(page 1)------->
+    <main id='mood_page'>
+        <p class='void' style='height: 107px'>
+        <table class='mood_table'> 
+            <tr>
+                <td><a onclick='changeMood("Minimal")' href="#"><p>Minimal</p><img src='img/mood/minimal.png' width='161' height='195'></a></td>
+                <td><a onclick='changeMood("Unique")' href="#"><p>Unique.</p><img src='img/mood/unique.png' width='117' height='200'></a></td>
+            </tr>
+            <tr>
+                <td class='mood button' style='border: none;'><img src='img/mood/mood.png' style='margin-left: auto; margin-right: auto; margin-top: 60px; margin-bottom: 60px; display: block;'><!--mood--></td>
+                <td><a onclick='changeMood("Scandinavian")' href="#"><p>Scandinavian.</p><img src='img/mood/scandinavian.png' width='230' height='207'></a></td>
+            </tr>
+            <tr>
+                <td><a onclick='changeMood("Industrial")' href="#"><p>Industrial.</p><img src='img/mood/industrial.png' width='160' height='138'></a></td>
+                <td><a onclick='changeMood("Nature")' href="#"><p>Natural.</p><img src='img/mood/natural.png' width='240' height='172'></a></td>
+            </tr>
+        </table>
+        <p class='void' style='height: 107px'></p>
+    </main>
+
+    <!-------main(page 2)------->
+    <main id='mood_intro'>
+        <div class="back_box">
+            <div class='back'><a onclick='goBack()' href="#">&lt;</a></div>
+            <div class='front'><a onclick='goFront()' href="#">&gt;</a></div>
+        </div>
+        <nav class='mood_menu'>
+            <a class='button' id='Minimal' onclick='changeMood("Minimal")'>Minimal</a>
+            <a class='button' id='Unique' onclick='changeMood("Unique")'>Unique</a>
+            <a class='button' id='Scandinavian' onclick='changeMood("Scandinavian")'>Scandinavian</a>
+            <a class='button' id='Industrial' onclick='changeMood("Industrial")'>Industrial</a>
+            <a class='button' id='Nature' onclick='changeMood("Nature")'>Nature</a>
+        </nav>
+        <div class='scrollbar' id='scb1'><div class='scrollpoint' id='scp1'></div></div><div>
+        <section id='contents'>
+            <p id='title'></p>
+            <p id='context'></p>
+            <div class='mood_imgbox'><img id='mood_img'></div>
+            <div class='brandbox' id='brb1'><a href="#" onclick='goBrand(0)'><img class='brand' id='bra1'></a></div>
+            <div class='brandbox' id='brb2'><a href="#" onclick='goBrand(1)'><img class='brand' id='bra2'></a></div>
+        </section>
+        <p class='void' style="height: 200px;"></p>
+    </main>
+
+    <!-------main(page 3)------->
+    <main id='brand_page'>
+        <div class='back'><a onclick='goBack()'>&lt;</a></div>
+        <section class='s1'>
+            <article class='brand_imgbox'>
+                <img id="brand_img" src='img/brand_artek/artek.png'>
+            </article>
+        </section>
+        <section class='s2'>
+            <article>
+                <a id="brand_link1" target="_blank">
+                    <p class='img'><img id='brand_img1'></p>
+                    <p class='title' id="brand_title1">1</p>
+                    <p class='context' id="brand_context1">testcontext</p>
+                </a>
+        </article>
+        <article>
+            <a id="brand_link2" target="_blank">
+                <p class='img'><img id='brand_img2'></p>
+                <p class='title' id="brand_title2">2</p>
+                <p class='context' id="brand_context2">testcontext</p>
+            </a>
+        </article>
+        <article>
+            <a id="brand_link3" target="_blank">
+                <p class='img'><img id='brand_img3'></p>
+                <p class='title' id="brand_title3">3</p>
+                <p class='context' id="brand_context3">testcontext</p>
+            </a>
+        </article>
+        <article>
+            <a id="brand_link4" target="_blank">
+                <p class='img'><img id='brand_img4'></p>
+                <p class='title' id="brand_title4">4</p>
+                <p class='context' id="brand_context4">testcontext</p>
+            </a>
+        </article>
+        <article>
+            <a id="brand_link5" target="_blank">
+                <p class='img'><img id='brand_img5'></p>
+                <p class='title' id="brand_title5">5</p>
+                <p class='context' id="brand_context5">testcontext</p>
+            </a>
+        </article>
+        <article>
+            <a id="brand_link6" target="_blank">
+                <p class='img'><img id='brand_img6'></p>
+                <p class='title' id="brand_title6">6</p>
+                <p class='context' id="brand_context6">testcontext</p>
+            </a>
+        </article>
+    </section>
+    <p class="void" style="height: 76px;"></p>
+</main>
+
+    <!----------footer---------->
+    <footer w3-include-html='../page_templetes/footer.html'></footer>
+
+    <!----------script---------->
+    <script src='../page_templetes/page.js'></script>
+    <script src='mood.js'></script>
+
+</body>
+</html>
