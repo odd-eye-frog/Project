@@ -28,6 +28,7 @@ $(btn).on('click', function() {
         $(pw).next('label').addClass('warning');
     }
     else {
+        alert('로그인 기능은 현재 ID, 비밀번호 입력 및 메인 화면으로 이동 기능만 작동합니다.');
         location.href = "../main/index.html";
     }
 });
